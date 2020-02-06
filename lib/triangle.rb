@@ -25,7 +25,7 @@ class Triangle
 
 
   def validate_triangle
-    real_triangle = [(length_1 + length_2 > length_3), (length_2 + length_3 > length_1), (length_1 + length_3 > length_2)]
+    real_triangle = [] #[(length_1 + length_2 > length_3), (length_2 + length_3 > length_1), (length_1 + length_3 > length_2)]
 
     @sides.each do |side|
       real_triangle << false if side <= 0
